@@ -4,6 +4,9 @@ This repository contains the full hardware and software implementation for an au
 
 this repository was done by grup 1 in Instrumentation Engineering
 
+<img width="962" height="682" alt="image" src="https://github.com/user-attachments/assets/9675f184-f6e7-4451-95b7-7ba833614069" />
+
+
 The system is designed to automatically manage air quality in a closed environment by monitoring real-time temperature and humidity. It controls a servo-actuated damper and a relay-driven exhaust fan based on configurable setpoints. The core controller is an ESP32-S3 , with firmware written entirely in Rust.
 
 ---
@@ -13,7 +16,7 @@ Data is federated to two platforms: ThingsBoard for real-time operational monito
 Key Features
 
 Robust Sensing: Uses an industrial SHT20 temperature/humidity sensor communicating via the Modbus RTU (RS485) protocol for high noise immunity.
-<img width="962" height="682" alt="image" src="https://github.com/user-attachments/assets/e3738d34-db91-427c-b60e-d9b8f6f8e9d5" />
+<img width="830" height="427" alt="image" src="https://github.com/user-attachments/assets/c9e9eef0-6790-4ce9-ac98-460cb4dddc98" />
 
 
 
