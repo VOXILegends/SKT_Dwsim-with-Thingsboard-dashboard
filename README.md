@@ -11,7 +11,7 @@ The system is designed to automatically manage air quality in a closed environme
 
 ---
 
-Data is federated to two platforms: ThingsBoard for real-time operational monitoring and InfluxDB for historical time-series data logging and analysis.
+Data is federated to two platforms ThingsBoard for real-time operational monitoring and InfluxDB for historical time-series data logging and analysis.
 
 Key Features
 
@@ -24,28 +24,28 @@ Robust Sensing: Uses an industrial SHT20 temperature/humidity sensor communicati
 Dual Actuator Control:
 
 
-Exhaust Fan: Controlled by a 5V Relay module via a digital GPIO pin.
+Exhaust Fan Controlled by a 5V Relay module via a digital GPIO pin.
 
 
 
 
-Ventilation Damper: Controlled by a servo motor using the ESP32's LEDC (PWM) peripheral.
+Ventilation Damper Controlled by a servo motor using the ESP32's LEDC (PWM) peripheral.
 
 
 
-Modern Firmware: The ESP32-S3 firmware is built in Rust on top of the esp-idf framework, ensuring memory safety and high performance.
+Modern Firmware The ESP32-S3 firmware is built in Rust on top of the esp-idf framework, ensuring memory safety and high performance.
 
 Dual-Platform Data Sinks:
 
 
-ThingsBoard (MQTT): Publishes real-time telemetry (temp, humidity) and actuator status (relay state, servo position) via MQTT for a live operational dashboard.
+ThingsBoard (MQTT) Publishes real-time telemetry (temp, humidity) and actuator status (relay state, servo position) via MQTT for a live operational dashboard.
 
 
 
 
 
 
-InfluxDB (HTTP): Directly writes data from the ESP32 to an InfluxDB Cloud bucket using the HTTP v2 API and Line Protocol for long-term storage.
+InfluxDB (HTTP) Directly writes data from the ESP32 to an InfluxDB Cloud bucket using the HTTP v2 API and Line Protocol for long-term storage.
 
 
 
@@ -61,7 +61,19 @@ Dashboards & Application
    
 ![WhatsApp Image 2025-10-14 at 12 15 30_6cb5223c](https://github.com/user-attachments/assets/fbc3c2df-36ef-43f1-8f94-a93abc230b6b)
 
-This dashboard provides a live, high-level view for an operator. It displays the current temperature and humidity, the fan's On/Off status, and the servo's rotational position as a gauge.
+This dashboard provides a live, high-level view for an operator. It's built on ThingsBoard and displays key telemetry and actuator states:
+
+Live Data Shows the current "SHT20 temperature" (e.g., 29 °C) and "SHT20 Humidity" (e.g., 53 %).
+
+Actuator Status:
+
+FAN INDICATOR, A toggle switch showing the live On/Off status of the exhaust fan.
+
+BUKAAN SERVO, A radial gauge displaying the servo's rotational position (e.g., 100).
+
+Historical Trends, Includes time-series graphs for both temperature and humidity to monitor recent trends.
+
+Alarms, An alarm widget displays any active alerts (e.g., "No alarms found").
 
 2. InfluxDB (Time-Series Data)
 ![WhatsApp Image 2025-10-14 at 12 15 31_fa9127b7](https://github.com/user-attachments/assets/ca6a1f9a-cb82-4592-9736-c401cf16657a)
