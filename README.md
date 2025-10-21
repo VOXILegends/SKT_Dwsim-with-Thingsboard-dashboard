@@ -49,6 +49,9 @@ InfluxDB (HTTP): Directly writes data from the ESP32 to an InfluxDB Cloud bucket
 
 
 Digital Twin Integration: Includes a Python utility script that bridges data between InfluxDB and the DWSIM chemical process simulator, allowing for comparison between live field data and a simulated model.
+
+---
+
 Dashboards & Application
 1. ThingsBoard (Operational Dashboard)
    
@@ -67,6 +70,8 @@ This dashboard shows the raw, real-time data for temperature and humidity being 
 
 This Python application validates the system. It reads the latest temperature from InfluxDB, writes it as an input to a DWSIM simulation file, executes the simulation, and then pushes the simulation's four output parameters back to InfluxDB.
 The plot compares the live sensor data ("Influx Temperature") with the DWSIM model's outputs ("Cold Water Outlet", "Hot Water Inlet", etc.).
+
+---
 
 System Architecture
 
@@ -95,6 +100,8 @@ A Line Protocol string is sent via HTTP POST directly to InfluxDB.
 Validation Loop:
 
 A Python utility (running on PC) connects DWSIM and InfluxDB to provide continuous validation.
+
+---
 
 Project Context
 
