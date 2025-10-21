@@ -117,7 +117,7 @@ Faculty: Fakultas Vokasi
 
 Department: Departemen Teknik Instrumentasi
 
-Instructor: Ahmad Radhy, S.Si., M.Si.
+Supervisior: Ahmad Radhy, S.Si., M.Si.
 
 Authors:
 
