@@ -59,7 +59,7 @@ Digital Twin Integration: Includes a Python utility script that bridges data bet
 Dashboards & Application
 1. ThingsBoard (Operational Dashboard)
    
-![WhatsApp Image 2025-10-14 at 12 15 30_6cb5223c](https://github.com/user-attachments/assets/fbc3c2df-36ef-43f1-8f94-a93abc230b6b)
+![WhatsApp Image 2025-10-21 at 18 29 40_175c58f2](https://github.com/user-attachments/assets/4532e5d8-f744-43cf-812b-f741e1bad59c)
 
 This dashboard provides a live, high-level view for an operator. It's built on ThingsBoard and displays key telemetry and actuator states:
 
