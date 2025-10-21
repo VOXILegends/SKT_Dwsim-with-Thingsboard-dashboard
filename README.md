@@ -13,6 +13,7 @@ Data is federated to two platforms: ThingsBoard for real-time operational monito
 Key Features
 
 Robust Sensing: Uses an industrial SHT20 temperature/humidity sensor communicating via the Modbus RTU (RS485) protocol for high noise immunity.
+<img width="962" height="682" alt="image" src="https://github.com/user-attachments/assets/e3738d34-db91-427c-b60e-d9b8f6f8e9d5" />
 
 
 
