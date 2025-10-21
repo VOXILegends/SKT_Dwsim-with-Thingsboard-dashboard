@@ -121,7 +121,7 @@ Supervisior: Ahmad Radhy, S.Si., M.Si.
 
 Authors:
 
-M Shofiyur Rochman (2042231031)
+Mochammad Shofiyur Rochman (2042231031)
 
 Maulidan Arridlo (2042231059)
 
